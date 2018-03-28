@@ -80,4 +80,9 @@ def turn
     end
   end
 
+  def play
+    turn until over?
+    puts winner ? "Congratulations #{winner}!" : "You lost!"
+  end
+
 end
