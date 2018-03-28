@@ -74,4 +74,10 @@ def turn
     won? || draw?
   end
 
+  def winner
+    if combo = won?
+      @board[combo[0]]
+    end
+  end
+
 end
