@@ -66,4 +66,8 @@ def turn
       @board.all?{|place| place != " " }
   end
 
+  def draw?
+      full? && !won?
+  end
+
 end
