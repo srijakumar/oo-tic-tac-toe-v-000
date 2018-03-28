@@ -46,4 +46,8 @@ def turn
     display_board
   end
 
+  def turn_count
+    @board.count{|place| place != " " }
+  end
+
 end
