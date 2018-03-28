@@ -62,4 +62,8 @@ def turn
       end
     end
 
+  def full?
+      @board.all?{|place| place != " " }
+  end
+
 end
